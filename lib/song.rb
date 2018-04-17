@@ -25,7 +25,7 @@ class Song
   end
 
   def self.artists
-    @@artists << @artist if @@artists.all?{|index| index != @artist}
+    @@artists << @artist if @@artists.all?{|index| index != @artist && index != nil}
   end
 
   def genre_count
